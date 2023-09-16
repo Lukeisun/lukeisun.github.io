@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { CS2, SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<main>
+			<Header title={SITE_TITLE} />
+			<h1> Hi, I'm Adin Lukas;
+				you can call me either or I like both</h1>
+			<p>
+				I am currently a Software Test Engineer at Bogen Communications.
+				I have graduated from the University of Central Florida with a Bachelor's in Computer Science.
+				I enjoy the fields of Computer Vision, Math, and Backend Engineering.
+				My personal hobbies include gaming <img src={CS2}, alt='cs2' class='game'/>, enjoying time with my wife, and learning new things (recently homelabbing!).
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
