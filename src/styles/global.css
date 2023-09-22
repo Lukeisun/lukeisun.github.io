@@ -106,10 +106,13 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--yellow);
 }
 a:hover {
-	color: var(--accent);
+	background-color: var(--red);
+}
+li a:hover {
+	background-color: transparent;
 }
 p {
 	margin-bottom: 1em;
@@ -135,7 +138,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	background-color: #92140CAB;
 	border-radius: 2px;
 }
 pre {
