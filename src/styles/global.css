@@ -105,8 +105,9 @@ strong,
 b {
 	font-weight: 700;
 }
-a {
+p a {
 	color: var(--yellow);
+	font-weight: bold;
 }
 a:hover {
 	background-color: var(--red);
@@ -138,7 +139,8 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: #92140CAB;
+	background-color: #24292eaa;
+	font-weight: bold;
 	border-radius: 2px;
 }
 pre {
@@ -168,14 +170,14 @@ hr {
 }
 
 .sr-only {
-	border: 0;
+
 	padding: 0;
 	margin: 0;
 	position: absolute !important;
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+	/* IE6, IE7 - g 0 height clip, off to the bottom right of the visible 1px box */
 	clip: rect(1px 1px 1px 1px);
 	/* maybe deprecated but we need to support legacy browsers */
 	clip: rect(1px, 1px, 1px, 1px);
