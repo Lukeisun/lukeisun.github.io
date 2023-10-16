@@ -4,7 +4,7 @@ import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import BookPost from "../../components/BookPost.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
-const allPosts = await Astro.glob("./books/*.md");
+const allPosts = await Astro.glob("./*.md");
 ---
 
 <!doctype html>
