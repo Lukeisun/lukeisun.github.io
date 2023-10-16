@@ -1,0 +1,17 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+const { title, url, pubDate } = Astro.props;
+const date = new Date(Date.parse(pubDate));
+import "../styles/posts.css";
+---
+
+<li>
+	<a href={url}>
+		<div class="post">
+			<p class="date">
+				{(<FormattedDate date={date} />)} - &nbsp;
+			</p>
+			<h4 class="title">{title}</h4>
+		</div>
+	</a>
+</li>

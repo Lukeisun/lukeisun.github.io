@@ -61,7 +61,9 @@ const date = new Date(Date.parse(pubDate));
 						<h1>{title}</h1>
 						<hr />
 					</div>
-					<slot />
+					<div class="content">
+						<slot />
+					</div>
 				</div>
 			</article>
 		</main>
