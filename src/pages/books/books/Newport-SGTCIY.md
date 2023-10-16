@@ -3,6 +3,7 @@ title: "So Good They Can't Ignore You"
 layout: "../../../layouts/Book.astro"
 pubDate: "Oct 2, 2023"
 ---
+
 Cal Newport's "So Good They Can't Ignore You" is a really interesting book, the main premise of the book is that
 following a passion is bad career advice. I found the message immediately compelling as this idea had been brewing
 in my mind since my driving test, where I had a pleasant conversation with an Uber driver after I had passed. The conversation had shifted towards the topic shifted towards me and my own career; I was in the process of my last semester
