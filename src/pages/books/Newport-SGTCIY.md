@@ -1,6 +1,6 @@
 ---
 title: "So Good They Can't Ignore You"
-layout: "../../../layouts/Book.astro"
+layout: "../../layouts/Book.astro"
 pubDate: "Oct 2, 2023"
 ---
 

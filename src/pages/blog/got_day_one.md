@@ -1,7 +1,7 @@
 ---
 title: "Starting 'got' - A git clone in Go"
 description: "Documenting my experience following along in James Coglan's book 'Building Git"
-layout: "../../../layouts/BlogPost.astro"
+layout: "../../layouts/BlogPost.astro"
 pubDate: "Sep 20, 2023"
 heroImage: "/got.png" 
 ---
