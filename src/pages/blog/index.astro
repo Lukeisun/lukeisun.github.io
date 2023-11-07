@@ -17,19 +17,23 @@ const allPosts = await Astro.glob("./*.md");
 			<Header />
 			<ul>
 				{
-					allPosts.map((post) => (
-						<BlogPost
-							url={post.url}
-							title={
-								post.frontmatter
-									.title
-							}
-							pubDate={
-								post.frontmatter
-									.pubDate
-							}
-						/>
-					))
+					allPosts
+						.map((post) => (
+							<BlogPost
+								url={post.url}
+								title={
+									post
+										.frontmatter
+										.title
+								}
+								pubDate={
+									post
+										.frontmatter
+										.pubDate
+								}
+							/>
+						))
+						.reverse()
 				}
 			</ul>
 		</main>

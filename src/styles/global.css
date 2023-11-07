@@ -119,7 +119,6 @@ p {
 	margin-bottom: 1em;
 }
 .prose p {
-	margin-bottom: 2em;
 	color: var(--white);
 }
 textarea {
@@ -190,4 +189,11 @@ gh {
 	background-color: white;
 	-webkit-mask: url(../../public/ghdrawn.svg) no-repeat center;
 	mask: url(../../public/ghdrawn.svg) no-repeat center;
+}
+table {
+	color: var(--white);
+}
+.ttext {
+	margin-bottom: 0em ;
+	color: var(--yellow) !important;
 }
