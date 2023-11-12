@@ -109,6 +109,10 @@ p a {
 	color: var(--yellow);
 	font-weight: bold;
 }
+li a {
+	color: var(--white);
+	font-weight: bold;
+}
 a:hover {
 	background-color: var(--red);
 }

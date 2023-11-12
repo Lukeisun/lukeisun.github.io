@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import LI from "../components/LI.astro";
 import { CS2, SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -34,7 +35,33 @@ import { CS2, SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 				experimenting with different things but think I
 				am going to stick with Astro :)
 			</p>
+			<br />
+
+			<h2>What I'm Currently Reading/Working Through</h2>
+			<ul>
+				<LI
+					href="http://sarabander.github.io/sicp/html/index.xhtml"
+					text="Structure And Interpretation of Computer Programs"
+				/>
+				<LI
+					href="https://pages.cs.wisc.edu/~remzi/OSTEP/"
+					text="Operating Systems Three Easy Pieces"
+				/>
+				<LI
+					href="https://raytracing.github.io/books/RayTracingInOneWeekend.html"
+					text="Ray Tracing In A Weekend"
+				/>
+				<LI 
+					href="https://www.amazon.com/Algebra-Happiness-Pursuit-Success-Meaning/dp/0593084195"
+					text="The Algebra of Happiness: Notes on the Pursuit of Success, Love, and Meaning"
+				/>
+				<LI
+					href="https://www.amazon.com/No-Longer-Human-Osamu-Dazai/dp/0811204812"
+					text="No Longer Human"
+				/>
+			</ul>
 		</main>
+
 		<Footer />
 	</body>
 </html>
