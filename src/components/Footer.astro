@@ -1,9 +1,10 @@
 ---
 const today = new Date();
+import { EMAIL, NAME } from "../consts";
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Adin Lukas DelaCruz
+	&copy;{today.getFullYear()}&nbsp;{NAME}
 	<div class="social-links">
 		<a
 			href="https://www.linkedin.com/in/adin-lukas-delacruz/"
@@ -57,7 +58,7 @@ const today = new Date();
 				></path>
 			</svg>
 		</a>
-		<a href="mailto:adinlukas01@gmail.com" target="_blank">
+		<a href=`mailto:${EMAIL}` target="_blank">
 			<span class="sr-only">Email me!</span>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
