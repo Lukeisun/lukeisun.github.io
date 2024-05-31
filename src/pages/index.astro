@@ -14,51 +14,25 @@ import { CS2, SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	<body>
 		<main>
 			<Header title={SITE_TITLE} />
-			<h1>
-				Hi, I'm Adin Lukas, and you're welcome to call
-				me by either name -- I like both.
-			</h1>
-			<p>
-				I am currently a Software Test Engineer at Bogen
-				Communications. I have graduated from the
-				University of Central Florida with a Bachelor's
-				in Computer Science. I enjoy the fields of
-				Computer Vision, Math, and Backend Engineering.
-				My personal hobbies include gaming <img
-					src={CS2}
-					alt="cs2"
-					class="game"
-				/>, enjoying time with my wife, and learning new
-				things (recently homelabbing!). Some parts of
-				the page are not fully functional, I'm
-				experimenting with different things but think I
-				am going to stick with Astro :)
-			</p>
+			<div class="header">
+				<h1>
+					Adin Lukas DelaCruz
+				</h1>
+			</div>
+			<div class="bio">
+					<p>
+					I am currently an Embedded Software Engineer at Bogen
+					Communications. I have graduated from the
+					University of Central Florida with a Bachelor's
+					in Computer Science. My personal hobbies include gaming <img
+						src={CS2}
+						alt="cs2"
+						class="game"
+					/>, enjoying time with my wife, and learning new
+					things (recently homelabbing!).
+				</p>
+			</div>
 			<br />
-
-			<h2>What I'm Currently Reading/Working Through</h2>
-			<ul>
-				<LI
-					href="http://sarabander.github.io/sicp/html/index.xhtml"
-					text="Structure And Interpretation of Computer Programs"
-				/>
-				<LI
-					href="https://pages.cs.wisc.edu/~remzi/OSTEP/"
-					text="Operating Systems Three Easy Pieces"
-				/>
-				<LI
-					href="https://raytracing.github.io/books/RayTracingInOneWeekend.html"
-					text="Ray Tracing In A Weekend"
-				/>
-				<LI
-					href="https://www.amazon.com/Algebra-Happiness-Pursuit-Success-Meaning/dp/0593084195"
-					text="The Algebra of Happiness: Notes on the Pursuit of Success, Love, and Meaning"
-				/>
-				<LI
-					href="https://www.amazon.com/No-Longer-Human-Osamu-Dazai/dp/0811204812"
-					text="No Longer Human"
-				/>
-			</ul>
 		</main>
 
 		<Footer />
