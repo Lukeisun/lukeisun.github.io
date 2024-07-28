@@ -1,9 +1,8 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import LI from "../components/LI.astro";
-import { CS2, SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
@@ -13,28 +12,57 @@ import { CS2, SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	</head>
 	<body>
 		<main>
-			<Header title={SITE_TITLE} />
 			<div class="header">
-				<h1>
-					Adin Lukas DelaCruz
-				</h1>
+				<h1 class="site-title">Adin Lukas DelaCruz</h1>
+				<p class="subtitle">Software Generalist</p>
 			</div>
 			<div class="bio">
-					<p>
-					I am currently an Embedded Software Engineer at Bogen
-					Communications. I have graduated from the
-					University of Central Florida with a Bachelor's
-					in Computer Science. My personal hobbies include gaming <img
-						src={CS2}
-						alt="cs2"
-						class="game"
-					/>, enjoying time with my wife, and learning new
-					things (recently homelabbing!).
+				<h2 class="subheader">Me</h2>
+				<p>
+					I am currently an Embedded Software
+					Engineer at Bogen Communications. I have
+					graduated from the University of Central
+					Florida with a Bachelor's in Computer
+					Science. My personal hobbies include
+					gaming, enjoying time with my wife, and
+					learning new things.
 				</p>
+				<h2 class="subheader">Now</h2>
+				<p>
+					I'm learning Zig and doing
+					<a
+						href="https://craftinginterpreters.com/"
+					>
+						Crafting Interpreters</a
+					>!
+				</p>
+				<h2 class="subheader">Inspirations</h2>
+				<p>People I look up to</p>
+				<ul>
+					<LI
+						href="https://www.youtube.com/@code_report"
+						text="Connor Hoekstra"
+					/>
+					<LI
+						href="https://x.com/ludwigABAP"
+						text="Ludwig"
+					/>
+					<LI
+						href="https://x.com/rtfeldman"
+						text="Richard Feldman"
+					/>
+					<LI
+						href="https://www.youtube.com/@ThePrimeTimeagen"
+						text="Primeagen"
+					/>
+					<LI
+						href="https://andrewkelley.me/"
+						text="Andrew Kelley"
+					/>
+				</ul>
+				<br />
 			</div>
-			<br />
 		</main>
-
 		<Footer />
 	</body>
 </html>

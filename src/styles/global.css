@@ -16,13 +16,15 @@
 	--blue-gradient: var(--blue)50, #000;
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
-	--yellow: #FFCF99; 
+	--yellow: #FFCF99;
 	--white: #FFF8F0;
 	--red: #92140C;
 }
+
 html {
 	background-color: var(--blue);
 }
+
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
@@ -30,6 +32,7 @@ html {
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-bold.woff') format('woff');
@@ -37,6 +40,7 @@ html {
 	font-style: normal;
 	font-display: swap;
 }
+
 header {
 	margin: 0 auto;
 	margin-bottom: 1em;
@@ -48,9 +52,11 @@ header {
 	width: 720px;
 	max-width: calc(100% - 2em);
 }
+
 header a {
 	color: var(--white);
 }
+
 body {
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
@@ -64,18 +70,21 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+
 .game {
-    height: auto;
-    width: 1em;
-    display: inline;
-    border-radius: 0;
+	height: auto;
+	width: 1em;
+	display: inline;
+	border-radius: 0;
 }
+
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: 0 auto;
 	padding: 3em 1em;
 }
+
 h1,
 h2,
 h3,
@@ -83,90 +92,113 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color:var(--yellow);
+	color: var(--yellow);
 	line-height: 1.2;
 }
+
 h1 {
 	font-size: 3.052em;
 }
+
 h2 {
 	font-size: 2.441em;
 }
+
 h3 {
 	font-size: 1.953em;
 }
+
 h4 {
 	font-size: 1.563em;
 }
+
 h5 {
 	font-size: 1.25em;
 }
+
 strong,
 b {
 	font-weight: 700;
 }
+
 p a {
 	color: var(--yellow);
 	font-weight: bold;
 }
+
 li a {
-	color: var(--white);
+	color: var(--yellow);
 	font-weight: bold;
 }
+
 a:hover {
 	background-color: var(--red);
 }
+
 li a:hover {
 	background-color: transparent;
 }
+
 p {
 	margin-bottom: 1em;
 }
+
 .prose p {
 	color: var(--white);
 }
+
 textarea {
 	width: 100%;
 	font-size: 16px;
 }
+
 input {
 	font-size: 16px;
 }
+
 table {
 	width: 100%;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
 }
+
 code {
 	padding: 2px 5px;
 	background-color: #24292eaa;
 	font-weight: bold;
 	border-radius: 2px;
 }
+
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
 }
-pre > code {
+
+pre>code {
 	all: unset;
 }
+
 blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
 }
+
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
+
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
 	}
+
 	main {
 		padding: 1em;
 	}
@@ -189,18 +221,22 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
 gh {
 	background-color: white;
 	-webkit-mask: url(../../public/ghdrawn.svg) no-repeat center;
 	mask: url(../../public/ghdrawn.svg) no-repeat center;
 }
+
 table {
 	color: var(--white);
 }
+
 .ttext {
-	margin-bottom: 0em ;
+	margin-bottom: 0em;
 	color: var(--yellow) !important;
 }
+
 .bio {
 	border-radius: 2px;
 	background-color: #09102b8a;
@@ -208,9 +244,11 @@ table {
 	flex: 1;
 	padding: .5em;
 }
+
 .header {
 	text-align: center;
 }
+
 footer {
 	background: var(--blue);
 	color: rgb(var(--gray));
@@ -222,18 +260,32 @@ footer {
 }
 
 .social-links {
-display: flex;
-justify-content: center;
-gap: 1em;
-margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	margin-top: 1em;
 }
+
 .social-links a {
-text-decoration: none;
-color: rgb(var(--gray));
-height: 32px;
-width: 32px;
-border-radius: 8px;
+	text-decoration: none;
+	color: rgb(var(--gray));
+	height: 32px;
+	width: 32px;
+	border-radius: 8px;
 }
+
 .social-links a:hover {
-color: rgb(var(--gray-dark));
+	color: rgb(var(--gray-dark));
+}
+
+.subtitle {
+	font-style: italic;
+	margin-top: -1em;
+	margin-bottom: 1em;
+}
+
+.subheader {
+	text-indent: .2em;
+	margin-bottom: .1em;
+	border-bottom: .1em solid lightblue;
 }
