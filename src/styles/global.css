@@ -69,6 +69,8 @@ body {
 	color: var(--white);
 	font-size: 20px;
 	line-height: 1.7;
+	display: flex;
+	flex-direction: column;
 }
 
 .game {
@@ -83,6 +85,7 @@ main {
 	max-width: calc(100% - 2em);
 	margin: 0 auto;
 	padding: 3em 1em;
+	flex: 1 0 auto;
 }
 
 h1,
@@ -253,7 +256,7 @@ footer {
 	background: var(--blue);
 	color: rgb(var(--gray));
 	text-align: center;
-	position: absolute;
+	flex-shrink: 0;
 	bottom: 0;
 	width: 100%;
 	padding: 1em;
